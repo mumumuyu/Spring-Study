@@ -1,0 +1,5 @@
+# Project exclude paths
+/spring-test-aop/target/
+/spring-test-hellospring/target/
+/spring-test-ioc1/target/
+/spring-test-proxy/target/

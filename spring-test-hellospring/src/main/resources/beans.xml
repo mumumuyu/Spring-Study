@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:annotation-config/>
+
+    <bean id="helloDog" class="pojo.Hello"/>
+
+    <bean id="dog222" class="pojo.Dog"/>
+    <bean id="dog2" class="pojo.Dog"/>
+
+    <bean id="hello" class="pojo.Hello">
+        <constructor-arg name="name" value="Spring hello1!"/>
+<!--        <property name="name" value="Spring hello!!!"/> 默认为无参构造-->
+    </bean>
+    
+    <bean id="hello2" class="pojo.Hello">
+        <constructor-arg type="java.lang.String" value="Spring 2"/>
+    </bean>
+
+    <bean id="hello3" class="pojo.Hello">
+        <constructor-arg index="0" value="Spring 3"/>
+    </bean>
+
+
+    
+</beans>
